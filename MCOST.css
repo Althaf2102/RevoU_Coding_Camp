@@ -1,0 +1,395 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.light {
+  background-color: #f0f0f0;
+  color: #222222;
+}
+
+body.light .header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd;
+}
+
+body.light .header h2 {
+  color: #222222;
+}
+
+body.light #themeBtn {
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  color: #222222;
+}
+
+body.light #themeBtn:hover {
+  background: #f0f0f0;
+}
+
+body.light .balance-box {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+}
+
+body.light .balance-label {
+  color: #777777;
+}
+
+body.light #totalBalance {
+  color: #2196f3;
+}
+
+body.light .card {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+}
+
+body.light .card h3 {
+  color: #222222;
+}
+
+body.light label {
+  color: #555555;
+}
+
+body.light input,
+body.light select {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  color: #222222;
+}
+
+body.light .error-msg {
+  color: #e53935;
+}
+
+body.light .txn-item {
+  border-bottom: 1px solid #eeeeee;
+}
+
+body.light .txn-name {
+  color: #222222;
+}
+
+body.light .txn-amount {
+  color: #2196f3;
+}
+
+body.light .badge-Food      { background: #e8f5e9; color: #2e7d32; }
+body.light .badge-Transport { background: #e3f2fd; color: #1565c0; }
+body.light .badge-Fun       { background: #fff3e0; color: #e65100; }
+
+body.light .empty-text {
+  color: #999999;
+}
+
+body.light .legend {
+  color: #555555;
+}
+
+body.dark {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+body.dark .header {
+  background-color: #222222;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+body.dark .header h2 {
+  color: #f0f0f0;
+}
+
+body.dark #themeBtn {
+  background: #333333;
+  border: 1px solid #555555;
+  color: #f0f0f0;
+}
+
+body.dark #themeBtn:hover {
+  background: #444444;
+}
+
+body.dark .balance-box {
+  background-color: #2a2a2a;
+  border: 1px solid #3a3a3a;
+}
+
+body.dark .balance-label {
+  color: #aaaaaa;
+}
+
+body.dark #totalBalance {
+  color: #64b5f6;
+}
+
+body.dark .card {
+  background-color: #2a2a2a;
+  border: 1px solid #3a3a3a;
+}
+
+body.dark .card h3 {
+  color: #f0f0f0;
+}
+
+body.dark label {
+  color: #aaaaaa;
+}
+
+body.dark input,
+body.dark select {
+  background-color: #333333;
+  border: 1px solid #555555;
+  color: #f0f0f0;
+}
+
+body.dark input::placeholder {
+  color: #777777;
+}
+
+body.dark .error-msg {
+  color: #ef9a9a;
+}
+
+body.dark .txn-item {
+  border-bottom: 1px solid #3a3a3a;
+}
+
+body.dark .txn-name {
+  color: #f0f0f0;
+}
+
+body.dark .txn-amount {
+  color: #64b5f6;
+}
+
+body.dark .badge-Food      { background: #1b3a1f; color: #81c784; }
+body.dark .badge-Transport { background: #0d2a45; color: #64b5f6; }
+body.dark .badge-Fun       { background: #3e2000; color: #ffb74d; }
+
+body.dark .empty-text {
+  color: #666666;
+}
+
+body.dark .legend {
+  color: #aaaaaa;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.header {
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#themeBtn {
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 860px;
+  margin: 20px auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.balance-box {
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+}
+
+.balance-label {
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+#totalBalance {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.card {
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.card h3 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 4px;
+  margin-top: 12px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 9px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #2196f3 !important;
+}
+
+.error-msg {
+  font-size: 12px;
+  margin-top: 8px;
+  min-height: 16px;
+}
+
+.btn-add {
+  width: 100%;
+  margin-top: 14px;
+  padding: 11px;
+  background-color: #2196f3;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-add:hover {
+  background-color: #1976d2;
+}
+
+.bottom-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+#transactionList {
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.empty-text {
+  font-size: 13px;
+  padding: 12px 0;
+}
+
+.txn-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  gap: 8px;
+}
+
+.txn-item:last-child {
+  border-bottom: none !important;
+}
+
+.txn-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.txn-name {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.txn-amount {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.txn-badge {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.btn-delete {
+  padding: 5px 12px;
+  background-color: #e53935;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.btn-delete:hover {
+  background-color: #c62828;
+}
+
+.chart-area {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+#spendingChart {
+  max-height: 200px;
+  display: none;
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 12px;
+  font-size: 12px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.dot.food      { background-color: #4caf50; }
+.dot.transport { background-color: #2196f3; }
+.dot.fun       { background-color: #ff9800; }
+
+@media (max-width: 600px) {
+  .bottom-row { grid-template-columns: 1fr; }
+  #totalBalance { font-size: 28px; }
+}
